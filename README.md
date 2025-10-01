@@ -150,3 +150,10 @@ La base de données SIG développée s’inscrit dans une démarche de connaissa
 | urbanisme | plu_prescr_lineaire (DDT) | Prescriptions linéaires PLU. |
 | urbanisme | plu_zonaga_urba (DDT) | Zonage d’urbanisme. |
 
+
+
+Installation 
+Disposer de PostgreSQL 17. 
+
+Précautions 
+Les couches rasters ne sont pas incluses dans le dump. 
