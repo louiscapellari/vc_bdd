@@ -150,6 +150,159 @@ La base de données SIG développée s’inscrit dans une démarche de connaissa
 | urbanisme | plu_prescr_lineaire (DDT) | Prescriptions linéaires PLU. |
 | urbanisme | plu_zonaga_urba (DDT) | Zonage d’urbanisme. |
 
+erDiagram
+    PARCELLE ||--o{ LIEN_BATI_PARCELLE : concerne
+    BATIMENT ||--o{ LIEN_BATI_PARCELLE : est_implante_sur
+
+    ADRESSE ||--o{ LIEN_ADRESSE_BATI : localise
+    BATIMENT ||--o{ LIEN_ADRESSE_BATI : est_localise_par
+
+    ADRESSE ||--o{ LIEN_ADRESSE_PARCELLE : localise
+    PARCELLE ||--o{ LIEN_ADRESSE_PARCELLE : porte
+
+    ADRESSE ||--o{ LIEN_ADRESSE_SUPPORT : a_pour_support
+    VOIE ||--o{ ADRESSE : porte
+    VOIE ||--o{ VOIE_NOMMEE : est_reference
+
+    TRONCON_ROUTE ||--o{ VOIE_NOMMEE : nomme
+    TRONCON_ROUTE }o--o{ NOEUD_VIAIRE : connecte
+
+    COURS_EAU ||--o{ TRONCON_HYDRO : compose
+    TRONCON_HYDRO }o--o{ NOEUD_HYDRO : connecte
+    SURF_HYDRO }o--|| BASSIN_VERSANT : appartient
+
+    ZONAGE }o--o{ PARCELLE : couvre
+    ZONAGE }o--o{ BATIMENT : contraint
+    ZONAGE }o--o{ TRONCON_ROUTE : reglemente
+    ZONAGE }o--o{ MILIEU_NATUREL : protege
+
+    SENTIER }o--o{ POI_TOURISME : dessert
+    SENTIER }o--o{ TRONCON_ROUTE : croise
+    DOMAINE_SKIABLE ||--o{ PISTE_SKI : contient
+    PISTE_SKI ||--o{ REMONTEE_MECA : dessert
+
+    MNS ||--|| MNT : derive
+    COURBE_NIVEAU }o--|| MNT : isocote
+
+    %% Entités (regroupements sémantiques)
+    PARCELLE {
+      string id_parcelle
+      geometry geom
+      string ref_cadastrale
+    }
+    BATIMENT {
+      string id_batiment
+      geometry geom
+      string type
+    }
+    ADRESSE {
+      string id_adresse
+      geometry geom
+      string numero
+      string complement
+    }
+    VOIE {
+      string id_voie
+      geometry geom
+      string nom
+    }
+    VOIE_NOMMEE {
+      string id_voie_nommee
+      string nom_officiel
+    }
+    TRONCON_ROUTE {
+      string id_troncon
+      geometry geom
+      string classe
+    }
+    NOEUD_VIAIRE {
+      string id_noeud
+      geometry geom
+    }
+    COURS_EAU {
+      string id_cours_eau
+      string nom
+    }
+    TRONCON_HYDRO {
+      string id_th
+      geometry geom
+      string regime
+    }
+    NOEUD_HYDRO {
+      string id_nh
+      geometry geom
+    }
+    SURF_HYDRO {
+      string id_sh
+      geometry geom
+      string type
+    }
+    BASSIN_VERSANT {
+      string id_bv
+      geometry geom
+    }
+    ZONAGE {
+      string id_zonage
+      geometry geom
+      string theme  /* ex: Natura2000, ZNIEFF, PPRI, PLU, ZAP... */
+      string sous_type
+    }
+    MILIEU_NATUREL {
+      string id_milieu
+      geometry geom
+      string type  /* tourbiere, pelouse_seche, haie... */
+    }
+    POI_TOURISME {
+      string id_poi
+      geometry geom
+      string categorie /* refuge, musee, camping, pt_vue... */
+      string nom
+    }
+    SENTIER {
+      string id_sentier
+      geometry geom
+      string source /* IGN / OSM / local */
+      string typologie /* GR, PR, trail, ski... */
+    }
+    MNT {
+      string id_mnt
+      raster grid
+      number resolution
+    }
+    MNS {
+      string id_mns
+      raster grid
+      number resolution
+    }
+    COURBE_NIVEAU {
+      string id_cn
+      geometry geom
+      number altitude
+    }
+
+    %% Associations matérialisant tes liens existants
+    LIEN_BATI_PARCELLE {
+      string id
+      string id_batiment
+      string id_parcelle
+    }
+    LIEN_ADRESSE_BATI {
+      string id
+      string id_adresse
+      string id_batiment
+    }
+    LIEN_ADRESSE_PARCELLE {
+      string id
+      string id_adresse
+      string id_parcelle
+    }
+    LIEN_ADRESSE_SUPPORT {
+      string id
+      string id_adresse
+      string support_type /* point, entree, portail... */
+    }
+
+
 
 
 Installation 
