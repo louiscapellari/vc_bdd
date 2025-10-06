@@ -5,6 +5,8 @@ La base de données SIG développée s’inscrit dans une démarche de connaissa
 
 Le SIG développé s’oriente principalement autour des thématiques environnementales et touristiques. L’objectif est de produire une information géographique pertinente permettant de mettre en valeur les richesses naturelles, les contraintes environnementales, les espaces protégés ainsi que les équipements liés au tourisme.
 
+Le SIG développé pour la commune de Val Cenis, située en Savoie, s’oriente principalement autour des thématiques environnementales et touristiques. L’objectif est de produire une information géographique pertinente permettant de mettre en valeur les richesses naturelles, les contraintes environnementales, les espaces protégés ainsi que les équipements liés au tourisme. Ce SIG vise à appuyer les politiques locales d’aménagement, de préservation et de valorisation du territoire.
+
 ## Sources des données utilisées 
 - IGN (Institut national de l’information géographique et forestière)
 - DDT Savoie (Direction Départementale des Territoires)
