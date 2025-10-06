@@ -3,15 +3,17 @@
 ## Présentation générale de la base de données
 La base de données SIG développée s’inscrit dans une démarche de connaissance, de gestion et de valorisation du territoire. Conçue autour des thématiques environnementales et touristiques, elle a pour vocation de centraliser et d’organiser des données géographiques issues de sources variées (institutionnelles, scientifiques et collaboratives). Elle répond à plusieurs enjeux : faciliter la prise de décision en aménagement en intégrant les contraintes environnementales et réglementaires, soutenir la préservation de la biodiversité et des milieux naturels par une meilleure compréhension spatiale, et contribuer à la valorisation des patrimoines naturels et culturels en lien avec le développement touristique. Elle constitue ainsi un outil stratégique permettant d’articuler protection, exploitation et mise en valeur du territoire, tout en assurant une vision transversale et cohérente de ses composantes physiques, écologiques, socio-économiques et culturelles.
 
+Le SIG développé s’oriente principalement autour des thématiques environnementales et touristiques. L’objectif est de produire une information géographique pertinente permettant de mettre en valeur les richesses naturelles, les contraintes environnementales, les espaces protégés ainsi que les équipements liés au tourisme.
+
 ## Sources des données utilisées 
 - IGN (Institut national de l’information géographique et forestière)
-- INPN (Inventaire National du Patrimoine Naturel)
 - DDT Savoie (Direction Départementale des Territoires)
-- BRGM (Bureau de Recherches Géologiques et Minières)
-- CEN (Conservatoire d’Espaces Naturels)
 - OSM (OpenStreetMap)
-- Autres organismes spécialisés (ex. zones Natura 2000, zones ZNIEFF)
+- BRGM (Bureau de Recherches Géologiques et Minières)
+- INPN (Inventaire National du Patrimoine Naturel)
+- CEN (Conservatoire d’Espaces Naturels)
 
+## Détail  de la structure de la base de données et des couches utilisées 
 | Schéma | Couche | Contenu / utilité |
 |--------|---------|-------------------|
 | administratif | cc_hmv (IGN) | Limites intercommunales, support pour l’analyse administrative. |
