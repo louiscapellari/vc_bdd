@@ -162,8 +162,8 @@ Le SIG développé pour la commune de Val Cenis, située en Savoie, s’oriente 
 | urbanisme | plu_prescr_lineaire (DDT) | Prescriptions linéaires PLU. |
 | urbanisme | plu_zonaga_urba (DDT) | Zonage d’urbanisme. |
 
-Installation 
+## Installation 
 Disposer de PostgreSQL 17. 
 
-Précautions 
+## Précautions 
 Les couches rasters ne sont pas incluses dans le dump. 
