@@ -1,11 +1,7 @@
 # vc_bdd
 
 ## Présentation générale de la base de données
-La base de données SIG développée s’inscrit dans une démarche de connaissance, de gestion et de valorisation du territoire. Conçue autour des thématiques environnementales et touristiques, elle a pour vocation de centraliser et d’organiser des données géographiques issues de sources variées (institutionnelles, scientifiques et collaboratives). Elle répond à plusieurs enjeux : faciliter la prise de décision en aménagement en intégrant les contraintes environnementales et réglementaires, soutenir la préservation de la biodiversité et des milieux naturels par une meilleure compréhension spatiale, et contribuer à la valorisation des patrimoines naturels et culturels en lien avec le développement touristique. Elle constitue ainsi un outil stratégique permettant d’articuler protection, exploitation et mise en valeur du territoire, tout en assurant une vision transversale et cohérente de ses composantes physiques, écologiques, socio-économiques et culturelles.
-
-Le SIG développé s’oriente principalement autour des thématiques environnementales et touristiques. L’objectif est de produire une information géographique pertinente permettant de mettre en valeur les richesses naturelles, les contraintes environnementales, les espaces protégés ainsi que les équipements liés au tourisme.
-
-Le SIG développé pour la commune de Val Cenis, située en Savoie, s’oriente principalement autour des thématiques environnementales et touristiques. L’objectif est de produire une information géographique pertinente permettant de mettre en valeur les richesses naturelles, les contraintes environnementales, les espaces protégés ainsi que les équipements liés au tourisme. Ce SIG vise à appuyer les politiques locales d’aménagement, de préservation et de valorisation du territoire.
+La base de données SIG développée s’inscrit dans une démarche de connaissance, de gestion et de valorisation du territoire. Conçue autour des thématiques environnementales et touristiques, elle a pour vocation de centraliser et d’organiser des données géographiques issues de sources variées afin de produire une information géographique pertinente permettant de mettre en valeur les richesses naturelles, les contraintes environnementales, les espaces protégés ainsi que les équipements liés au tourisme.
 
 ## Sources des données utilisées 
 - IGN (Institut national de l’information géographique et forestière)
@@ -162,8 +158,20 @@ Le SIG développé pour la commune de Val Cenis, située en Savoie, s’oriente 
 | urbanisme | plu_prescr_lineaire (DDT) | Prescriptions linéaires PLU. |
 | urbanisme | plu_zonaga_urba (DDT) | Zonage d’urbanisme. |
 
-## Installation 
-Disposer de PostgreSQL 17. 
+## Prérequis  
+- Disposer de PostgreSQL 17.
+- Disposer de PG Admin 4 (dans le cas de ce tutoriel)
 
+## Instructions d'installations 
+- Depuis PG Admin 4, créer une nouvelle base de données intitulée "sig_vc"
+<img width="1106" height="148" alt="12" src="https://github.com/user-attachments/assets/b68bf31b-a094-44f7-a9bd-67bdf3c758d2" />
+<img width="1414" height="1108" alt="13" src="https://github.com/user-attachments/assets/f201052d-2b10-4384-a437-1b5bacb7f16f" />
+- Depuis la base de données "sig_vc", restaurer la base de données depuis le fichier "sig_vc.backup"
+<img width="956" height="454" alt="14" src="https://github.com/user-attachments/assets/f61c91ea-559d-4a57-ae08-d67a4f0b3eca" />
+<img width="1544" height="1064" alt="15" src="https://github.com/user-attachments/assets/787364cc-0dfe-43cf-846f-cffad79f99d3" />
+- Depuis QGIS, ajoutez la base de données "sig_vc" :
+<img width="892" height="1512" alt="16" src="https://github.com/user-attachments/assets/7303ac3f-76ad-49ea-b95a-66b2f549e4ac" />
+- Vous devriez maintenant pouvoir disposer des couches présentes dans la base de données
+  
 ## Précautions 
 Les couches rasters ne sont pas incluses dans le dump. 
