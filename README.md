@@ -162,7 +162,7 @@ La base de données SIG développée s’inscrit dans une démarche de connaissa
 - Disposer de PostgreSQL 17.
 - Disposer de PG Admin 4 (dans le cas de ce tutoriel)
 
-## Instructions d'installations 
+## Instructions d'installation
 - Depuis PG Admin 4, créer une nouvelle base de données intitulée "sig_vc"
 <img width="1106" height="148" alt="12" src="https://github.com/user-attachments/assets/b68bf31b-a094-44f7-a9bd-67bdf3c758d2" />
 <img width="1414" height="1108" alt="13" src="https://github.com/user-attachments/assets/f201052d-2b10-4384-a437-1b5bacb7f16f" />
