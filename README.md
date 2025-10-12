@@ -12,7 +12,7 @@ La base de données SIG développée s’inscrit dans une démarche de connaissa
 - CEN (Conservatoire d’Espaces Naturels)
 
 ## Détail  de la structure de la base de données et des couches utilisées 
-| Schéma | Couche | Contenu / utilité |
+| Schéma | Couche (fournisseur) | Contenu |
 |--------|---------|-------------------|
 | administratif | cc_hmv (IGN) | Limites intercommunales. |
 | administratif | val_cenis (IGN) | Limites communales de Val-Cenis. |
