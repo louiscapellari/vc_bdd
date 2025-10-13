@@ -1,4 +1,4 @@
-# vc_bdd
+# Base de données fictive pour la commune de Val-Cenis
 
 ## Présentation générale de la base de données
 La base de données SIG développée s’inscrit dans une démarche de connaissance, de gestion et de valorisation du territoire. Conçue autour des thématiques environnementales et touristiques, elle a pour vocation de centraliser et d’organiser des données géographiques issues de sources variées afin de produire une information géographique pertinente permettant de mettre en valeur les richesses naturelles, les contraintes environnementales, les espaces protégés ainsi que les équipements liés au tourisme.
@@ -163,6 +163,7 @@ La base de données SIG développée s’inscrit dans une démarche de connaissa
 - Disposer de PG Admin 4 (dans le cas de ce tutoriel)
 
 ## Instructions d'installation
+- Cloner le projet sur votre ordinateur pour récupérer le dump (git clone)
 - Depuis PG Admin 4, créer une nouvelle base de données intitulée "sig_vc"
 <img width="1106" height="148" alt="12" src="https://github.com/user-attachments/assets/b68bf31b-a094-44f7-a9bd-67bdf3c758d2" />
 <img width="1414" height="1108" alt="13" src="https://github.com/user-attachments/assets/f201052d-2b10-4384-a437-1b5bacb7f16f" />
