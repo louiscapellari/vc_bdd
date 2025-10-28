@@ -18,11 +18,11 @@ La base de données SIG développée ici s’inscrit dans une démarche de conna
 | administratif | val_cenis (IGN) | Limites communales de Val-Cenis. |
 | administratif | zone_habitation (IGN) | Zones urbanisées. |
 | administratif | lieux_dits (OSM) | Localisation des lieux-dits, repères toponymiques. |
-| administratif | toponymie (OSM) | Référentiel de noms de lieux |
+| administratif | toponymie (OSM) | Référentiel de noms de lieux. |
 | adresse | ban (IGN) | Base Adresse Nationale, adresses normalisées. |
 | adresse | lien_adresse_bati (IGN) | Relation entre adresse et bâtiment. |
 | adresse | lien_adresse_parcelle (IGN) | Relation entre adresse et parcelle cadastrale. |
-| adresse | lien_adresse_support (IGN) | Liens entre adresses et supports . |
+| adresse | lien_adresse_support (IGN) | Liens entre adresses et supports. |
 | adresse | lien_bati_parcelle (IGN) | Relation entre bâtiment et parcelle. |
 | adresse | voie_nommee (IGN) |  |
 | agriculture | cours_eau_bcae (IGN) | Réseau hydrographique lié à la réglementation agricole. |
