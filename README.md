@@ -1,7 +1,7 @@
 # Base de données de test pour la commune de Val-Cenis
 
 ## Présentation générale de la base de données
-La base de données SIG développée s’inscrit dans une démarche de connaissance, de gestion et de valorisation du territoire. Conçue autour des thématiques environnementales et touristiques, elle a pour vocation de centraliser et d’organiser des données géographiques issues de sources variées afin de produire une information géographique pertinente permettant de mettre en valeur les richesses naturelles, les contraintes environnementales, les espaces protégés ainsi que les équipements liés au tourisme.
+La base de données SIG développée ici s’inscrit dans une démarche de connaissance, de gestion et de valorisation du territoire. Conçue autour des thématiques environnementales et touristiques, elle a pour vocation de centraliser et d’organiser des données géographiques issues de sources variées afin de produire une information géographique pertinente permettant de mettre en valeur les richesses naturelles, les contraintes environnementales, les espaces protégés ainsi que les équipements liés au tourisme, uniquement à partir de données trouvables gratuitement et utilisable librement.
 
 ## Sources des données utilisées 
 - IGN (Institut national de l’information géographique et forestière)
@@ -160,18 +160,18 @@ La base de données SIG développée s’inscrit dans une démarche de connaissa
 
 ## Prérequis  
 - Disposer de PostgreSQL 17.
-- Disposer de PG Admin 4 (dans le cas de ce tutoriel)
+- Disposer de PG Admin 4 (dans le cas de ce tutoriel) 
 
 ## Instructions d'installation
 - Cloner le projet sur votre ordinateur pour récupérer le dump (git clone)
 - Depuis PG Admin 4, créer une nouvelle base de données intitulée "sig_vc"
-<img width="1106" height="148" alt="12" src="https://github.com/user-attachments/assets/b68bf31b-a094-44f7-a9bd-67bdf3c758d2" />
-<img width="1414" height="1108" alt="13" src="https://github.com/user-attachments/assets/f201052d-2b10-4384-a437-1b5bacb7f16f" />
-- Depuis la base de données "sig_vc", restaurer la base de données depuis le fichier "sig_vc.backup"
-<img width="956" height="454" alt="14" src="https://github.com/user-attachments/assets/f61c91ea-559d-4a57-ae08-d67a4f0b3eca" />
-<img width="1544" height="1064" alt="15" src="https://github.com/user-attachments/assets/787364cc-0dfe-43cf-846f-cffad79f99d3" />
-- Depuis QGIS, ajoutez la base de données "sig_vc" :
-<img width="892" height="1512" alt="16" src="https://github.com/user-attachments/assets/7303ac3f-76ad-49ea-b95a-66b2f549e4ac" />
+<img width="1106" height="148" alt="12" src="https://github.com/user-attachments/assets/b68bf31b-a094-44f7-a9bd-67bdf3c758d2" /> </br>
+<img width="1414" height="1108" alt="13" src="https://github.com/user-attachments/assets/f201052d-2b10-4384-a437-1b5bacb7f16f" /> </br>
+- Depuis la base de données "sig_vc", restaurer la base de données depuis le fichier "sig_vc.backup" </br>
+<img width="956" height="454" alt="14" src="https://github.com/user-attachments/assets/f61c91ea-559d-4a57-ae08-d67a4f0b3eca" /> </br>
+<img width="1544" height="1064" alt="15" src="https://github.com/user-attachments/assets/787364cc-0dfe-43cf-846f-cffad79f99d3" /> </br>
+- Depuis QGIS, ajoutez la base de données "sig_vc" : </br> 
+<img width="892" height="1512" alt="16" src="https://github.com/user-attachments/assets/7303ac3f-76ad-49ea-b95a-66b2f549e4ac" /></br>
 - Vous devriez maintenant pouvoir disposer des couches présentes dans la base de données
   
 ## Précautions 
