@@ -99,10 +99,10 @@ La base de données SIG développée ici s’inscrit dans une démarche de conna
 | hydro | troncon_hydro (IGN) | Tronçons de cours d’eau. |
 | hydro | chute_eau (OSM) | Localisation de chutes d’eau. |
 | hydro | eau_potable (OSM) | Points liés à l’eau potable. |
-| imagerie | ortho_irc | Orthophotographies infrarouge. |
-| imagerie | ortho_rvb | Orthophotographies couleurs naturelles. |
-| imagerie | carto_fonctions_ndvi_regularite | Indice de végétation NDVI. |
-| imagerie | prob_presence_seuille_milieux_humides |  |
+| imagerie | ortho_irc (IGN) | Orthophotographies infrarouge de la BD Ortho de l'IGN |
+| imagerie | ortho_rvb (IGN) | Orthophotographies couleurs naturelles 20cm de résolution spatiale de la BD Ortho de l'IGN |
+| imagerie | carto_fonctions_ndvi_regularite (INPN) | Indice de végétation NDVI. |
+| imagerie | prob_presence_seuille_milieux_humides (INPN) |  |
 | mobilite | aerodrome (IGN) | Localisation des aérodromes. |
 | mobilite | troncon_route (IGN) | Réseau routier IGN. |
 | mobilite | voie_nommee (IGN) | Routes avec noms. |
