@@ -159,20 +159,20 @@ La base de données SIG développée ici s’inscrit dans une démarche de conna
 | urbanisme | plu_zonaga_urba (DDT) | Zonage d’urbanisme. |
 
 ## Prérequis  
-- Disposer de PostgreSQL 17.
-- Disposer de PG Admin 4 (dans le cas de ce tutoriel) 
+- Disposer de PostgreSQL et de PostGIS (PG 17 utilisé). 
+- Disposer d'un SGBD (PG Admin 4 utilisé dans notre cas, Dbeaver aurait pu aussi être utilisé).
 
 ## Instructions d'installation
-- Cloner le projet sur votre ordinateur pour récupérer le dump (git clone)
-- Depuis PG Admin 4, créer une nouvelle base de données intitulée "sig_vc"
+- Cloner le projet sur votre ordinateur pour récupérer le dump (git clone).
+- Depuis PG Admin, créer une nouvelle base de données intitulée "sig_vc".
 <img width="1106" height="148" alt="12" src="https://github.com/user-attachments/assets/b68bf31b-a094-44f7-a9bd-67bdf3c758d2" /> </br>
 <img width="1414" height="1108" alt="13" src="https://github.com/user-attachments/assets/f201052d-2b10-4384-a437-1b5bacb7f16f" /> </br>
-- Depuis la base de données "sig_vc", restaurer la base de données depuis le fichier "sig_vc.backup" </br>
+- Depuis la base de données "sig_vc", restaurer la base de données depuis le fichier "sig_vc.backup". </br>
 <img width="956" height="454" alt="14" src="https://github.com/user-attachments/assets/f61c91ea-559d-4a57-ae08-d67a4f0b3eca" /> </br>
 <img width="1544" height="1064" alt="15" src="https://github.com/user-attachments/assets/787364cc-0dfe-43cf-846f-cffad79f99d3" /> </br>
 - Depuis QGIS, ajoutez la base de données "sig_vc" : </br> 
 <img width="892" height="1512" alt="16" src="https://github.com/user-attachments/assets/7303ac3f-76ad-49ea-b95a-66b2f549e4ac" /></br>
-- Vous devriez maintenant pouvoir disposer des couches présentes dans la base de données
+- Vous devriez maintenant pouvoir disposer des couches présentes dans la base de données.
   
 ## Précautions 
-Les couches rasters ne sont pas incluses dans le dump. 
+Pour des questions de volume, les couches rasters ne sont pas incluses dans le dump. 
