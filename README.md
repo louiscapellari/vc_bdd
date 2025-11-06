@@ -1,7 +1,7 @@
 # Base de données de test pour la commune de Val-Cenis
 
 ## Présentation générale de la base de données
-La base de données SIG développée ici s’inscrit dans une démarche de connaissance, de gestion et de valorisation du territoire. Conçue autour des thématiques environnementales et touristiques, elle a pour vocation de centraliser et d’organiser des données géographiques issues de sources variées afin de produire une information géographique pertinente permettant de mettre en valeur les richesses naturelles, les contraintes environnementales, les espaces protégés ainsi que les équipements liés au tourisme, uniquement à partir de données trouvables gratuitement et utilisable librement.
+La base de données SIG développée ici s’inscrit dans une démarche de connaissance, de gestion et de valorisation du territoire. Conçue autour des thématiques environnementales et touristiques, elle a pour vocation de centraliser et d’organiser des données géographiques issues de sources variées afin de produire une information géographique pertinente permettant de mettre en valeur les richesses naturelles, les contraintes environnementales, les espaces protégés ainsi que les équipements liés au tourisme, uniquement à partir de données trouvables gratuitement.
 
 ## Sources des données utilisées 
 - IGN (Institut national de l’information géographique et forestière)
